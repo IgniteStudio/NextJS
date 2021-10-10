@@ -1,19 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <h1>Davo List</h1>
+        {/* This Image component from Next requires width and height */}
+        <Image src="/Ignite.png" width={100} height={100}/>
       </div>
 
       <Link href="/"><a>Home</a></Link>
       <Link href="/about"><a>About</a></Link>
       <Link href="/davos"><a>Davo Listing</a></Link>
-
-      
-      
-      
     </nav>
   );
 };
